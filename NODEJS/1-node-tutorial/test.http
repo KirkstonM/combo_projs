@@ -1,0 +1,43 @@
+# curl --location 'https://sau-extoms.circles.life/api/shipment/v1/status'
+#--header 'Content-Type: application/json'
+#--data '{
+#    "status_list": [
+#        {
+#            "external_id": 3064074,
+#            "tracking_ref": "",
+#            "state": "FD",
+#            "item_line": [
+#                {
+#                    "shipped_sku": "8888888888888",
+#                    "quantity_shipped": 1,
+#                    "serial_numbers": "100000000000000110278"
+#                }
+#            ],
+#            "shipment_name": "115",
+#            "shipment_date": "2024-05-31T16:19:27.000+08:00"
+#        }
+#    ],
+#    "callback_type": "STATUS"
+#}'
+POST https://sau-extoms.circles.life/api/shipment/v1/status
+Content-Type: application/json
+
+{
+    "status_list": [
+        {
+            "external_id": 3064074,
+            "tracking_ref": "",
+            "state": "FD",
+            "item_line": [
+                {
+                    "shipped_sku": "8888888888888",
+                    "quantity_shipped": 1,
+                    "serial_numbers": "100000000000000110278"
+                }
+            ],
+            "shipment_name": "115",
+            "shipment_date": "2024-05-31T16:19:27.000+08:00"
+        }
+    ],
+    "callback_type": "STATUS"
+}

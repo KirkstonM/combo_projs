@@ -1,0 +1,50 @@
+body {
+    margin : 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+/*********************  AUTH CONTAINER  ******************/
+
+.auth--body {
+    background-color: #4b4949;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth--container {
+    border: 1px solid red;
+    width: 50rem;
+    height: 30rem;
+    display: flex;
+}
+
+.auth--img {
+    width: 50%;
+    height: 100%;
+    background-color: lightcyan;
+}
+.auth--img.switched{
+    width: 50%;
+    height: 100%;
+    background-color: lightcyan;
+    transform: translateX(100%);
+    transition: 3s ease transform;
+}
+.auth--form {
+    width: 50%;
+    height: 100%;
+
+}
+.auth--form.switched{
+    width: 50%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 3s ease transform;
+
+}
+
+/* <div className='auth--img switched'> x</div>
+<div className='auth--form switched'>y</div> */
